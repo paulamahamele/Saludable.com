@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Método Natural - Pierde Peso Desde Casa</title>
+<meta name="description" content="Recetas con café y jugos detox para adelgazar rápido y natural desde casa.">
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --green:#27ae60;
+    --dark:#0f0f0f;
+    --gold:#d4af37;
+    --light:#f4f4f4;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+body{font-family:Roboto;background:#fff;color:#333;}
+
+h1,h2,h3{font-family:Montserrat;text-transform:uppercase}
+
+.fade{opacity:0;transform:translateY(20px);transition:.8s}
+.show{opacity:1;transform:translateY(0)}
+
+.urgency{background:var(--gold);text-align:center;padding:10px;font-weight:bold;position:sticky;top:0}
+
+.hero{
+background:linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),
+url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438');
+background-size:cover;color:#fff;text-align:center;
+padding:80px 20px;min-height:80vh;display:flex;flex-direction:column;justify-content:center;
+}
+
+.hero h1{font-size:3rem;margin-bottom:20px}
+.hero span{color:var(--green)}
+
+.btn{
+background:var(--green);color:#fff;padding:18px 35px;
+border-radius:50px;text-decoration:none;font-weight:bold;
+display:inline-block;animation:pulse 2s infinite
+}
+
+@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.05)}}
+
+.benefits{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;padding:50px;background:var(--light)}
+.card{background:#fff;padding:25px;border-radius:10px;width:250px;text-align:center}
+
+.products{padding:60px 20px;max-width:1200px;margin:auto}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:25px}
+
+.product{border:1px solid #eee;border-radius:10px;overflow:hidden;text-align:center}
+.product img{width:100%;height:250px;object-fit:cover}
+.price{color:var(--green);font-size:1.4rem;font-weight:bold}
+
+.buy{display:block;background:var(--dark);color:#fff;padding:12px;margin:15px;border-radius:5px;text-decoration:none}
+.buy:hover{background:var(--green)}
+
+.timer{text-align:center;padding:40px;background:#eee}
+#count{font-size:2rem;color:red}
+
+.testimonials{background:#111;color:#fff;padding:60px;text-align:center}
+
+.faq{max-width:800px;margin:auto;padding:50px}
+.faq div{margin-bottom:15px;cursor:pointer}
+
+footer{background:#111;color:#777;text-align:center;padding:30px}
+
+.float{
+position:fixed;bottom:20px;right:20px;z-index:999;
+}
+</style>
+</head>
+
+<body>
+
+<div class="urgency">🔥 OFERTA LIMITADA TERMINA EN: <span id="count">15:00</span></div>
+
+<section class="hero">
+<h1>Descubre el <span>método natural</span> para adelgazar</h1>
+<p>Recetas con café y jugos detox que están cambiando vidas</p>
+<a href="#productos" class="btn">COMPRAR AHORA</a>
+</section>
+
+<section class="benefits">
+<div class="card">🔥 Quema grasa</div>
+<div class="card">🚫 Reduce apetito</div>
+<div class="card">⚡ Más energía</div>
+<div class="card">🌱 100% natural</div>
+</section>
+
+<section class="products" id="productos">
+<h2>Productos</h2>
+
+<div class="grid">
+
+<!-- PRODUTO -->
+<div class="product">
+<img src="assets/img/cafe_quema_grasa.png">
+<h3>Cafe QuemaGrasa MX</h3>
+<div class="price">$17</div>
+<a href="https://pay.hotmart.com/T105625460B" target="_blank" class="buy">Comprar</a>
+</div>
+
+<div class="product">
+<img src="assets/img/cafe_vientre_plano.png">
+<h3>Café VientrePlano Detox</h3>
+<div class="price">$17</div>
+<a href="https://pay.hotmart.com/T105625345S" target="_blank" class="buy">Comprar</a>
+</div>
+
+<div class="product">
+<img src="assets/img/cafe_appetite_control.png">
+<h3>Café Appetite Control</h3>
+<div class="price">$17</div>
+<a href="https://pay.hotmart.com/X105625079F" target="_blank" class="buy">Comprar</a>
+</div>
+
+<div class="product">
+<img src="assets/img/cafe_bariatrico.png">
+<h3>Café Bariátrico</h3>
+<div class="price">$17</div>
+<a href="https://pay.hotmart.com/U105625586K" target="_blank" class="buy">Comprar</a>
+</div>
+
+<div class="product">
+<img src="assets/img/jugo_vientre_plano.jpeg">
+<h3>Jugo Vientre Plano</h3>
+<div class="price">$19</div>
+<a href="https://pay.hotmart.com/E105637066Q" target="_blank" class="buy">Comprar</a>
+</div>
+
+<div class="product">
+<img src="assets/img/jugo_energia.jpeg">
+<h3>Jugo Energía</h3>
+<div class="price">$19</div>
+<a href="https://pay.hotmart.com/H105637052E" target="_blank" class="buy">Comprar</a>
+</div>
+
+<div class="product">
+<img src="assets/img/jugo_limpiador.jpeg">
+<h3>Jugo Limpiador</h3>
+<div class="price">$19</div>
+<a href="https://pay.hotmart.com/C105637088R" target="_blank" class="buy">Comprar</a>
+</div>
+
+<div class="product">
+<img src="assets/img/jugo_nocturno.jpeg">
+<h3>Jugo Nocturno</h3>
+<div class="price">$19</div>
+<a href="https://pay.hotmart.com/Q105637035G" target="_blank" class="buy">Comprar</a>
+</div>
+
+<div class="product">
+<img src="assets/img/jugo_quema_grasa_tropical.jpeg">
+<h3>Jugo Tropical</h3>
+<div class="price">$19</div>
+<a href="https://pay.hotmart.com/W105625191L" target="_blank" class="buy">Comprar</a>
+</div>
+
+<div class="product">
+<img src="assets/img/adelgazamiento_saludable.png">
+<h3>Adelgazamiento Saludable</h3>
+<div class="price">$27</div>
+<a href="https://pay.hotmart.com/E105668582T" target="_blank" class="buy">Comprar</a>
+</div>
+
+<div class="product">
+<img src="assets/img/zero_flacidez_celulite.png">
+<h3>Zero Flacidez</h3>
+<div class="price">$27</div>
+<a href="https://pay.hotmart.com/K105668343O" target="_blank" class="buy">Comprar</a>
+</div>
+
+</div>
+</section>
+
+<section class="timer">
+<h2>Oferta termina en:</h2>
+<div id="count">15:00</div>
+</section>
+
+<section class="testimonials">
+<h2>Resultados Reales</h2>
+<p>"Perdí 5kg en semanas!" - Maria</p>
+<p>"Funciona de verdad!" - Carlos</p>
+</section>
+
+<section class="faq">
+<h2>FAQ</h2>
+<div onclick="toggle(this)">¿Cómo recibo? <p style="display:none">Por email inmediato</p></div>
+<div onclick="toggle(this)">¿Es seguro? <p style="display:none">Sí, Hotmart</p></div>
+</section>
+
+<footer>
+<p>© 2026 - Todos los derechos reservados</p>
+</footer>
+
+<a href="#productos" class="btn float">🔥 Comprar</a>
+
+<script>
+let t=900;
+setInterval(()=>{
+let m=Math.floor(t/60);
+let s=t%60;
+document.getElementById("count").innerHTML=m+":"+(s<10?"0"+s:s);
+if(t>0)t--;
+},1000);
+
+function toggle(el){
+let p=el.querySelector("p");
+p.style.display=p.style.display==="block"?"none":"block";
+}
+</script>
+
+</body>
+</html>
